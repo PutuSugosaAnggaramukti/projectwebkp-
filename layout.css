@@ -1,0 +1,56 @@
+/* Define standard variables and values for website */
+/* Use the variables */
+body { 
+position: relative;
+width: 808px;
+height: 392px;
+background: #3C2F2F;
+}
+img{
+    position: absolute;
+    width: 255px;
+    height: 77px;
+    left: 550px;
+    top: 79px;
+}
+h1{
+color: #FFFFFF;
+position: absolute;
+width: 319px;
+height: 29px;
+left: 530px;
+top: 156px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+}
+button{
+position: absolute;
+width: 93px;
+height: 22px;
+left: 359px;
+top: 196px;
+
+background: rgba(196, 196, 196, 0.19);
+border-radius: 10px;
+position: absolute;
+width: 116px;
+height: 34px;
+left: 625px;
+top: 250px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+/*# sourceMappingURL=layout.css.map */
