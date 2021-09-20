@@ -2,31 +2,47 @@
 /* Use the variables */
 body { 
 position: relative;
-width: 808px;
-height: 392px;
+height: 100%;
 background: #3C2F2F;
 }
-img{
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("layoutbackground.jpg");
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  }
+  img{
     position: absolute;
     width: 255px;
     height: 77px;
     left: 550px;
-    top: 79px;
+    top: 100px;
 }
-h1{
-color: #FFFFFF;
-position: absolute;
-width: 319px;
-height: 29px;
-left: 530px;
-top: 156px;
+  .hero-text {
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    width: 319px;
+    height: 29px;
+    left: 530px;
+    top: 156px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+  }
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-}
 button{
 position: absolute;
 width: 93px;
@@ -39,8 +55,8 @@ border-radius: 10px;
 position: absolute;
 width: 116px;
 height: 34px;
-left: 625px;
-top: 250px;
+left: 90px;
+top: 150px;
 
 font-family: Roboto;
 font-style: normal;
@@ -52,5 +68,6 @@ line-height: 14px;
 
 color: #FFFFFF;
 }
+
 
 /*# sourceMappingURL=layout.css.map */

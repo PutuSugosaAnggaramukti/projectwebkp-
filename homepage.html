@@ -3,48 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="homepage.css">
     <title>Home</title>
 </head>
 <body>
-    <div class="weblogo">
-        <img src="logo.png" alt="">
-    </div>
-    <h1>Team</h1>
-    <h2>About Us</h2>
-    <h3>Service</h3>
-    <h4>Portofolio</h4>
-    <h5>Our Client</h5>
-    <div class="w3-content w3-display-container">
-        <img class="mySlides" src="gambar 1.PNG" style="width:50%">
-        <img class="mySlides" src="gambar 2.PNG" style="width:50%">
-        <img class="mySlides" src="gambar 3.PNG" style="width:50%">
-        <img class="mySlides" src="gambar 4.PNG" style="width:50%">
-      
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <div class="flex__container flex--pikachu flex--active" data-slide="1">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Our Client</p>
+        <h1 class="text--big">Mirota Kampus Group</h1>
+        <p class="text--normal">MannaKampus Online adalah toko online dari Manna Kampus(Mirota Kampus), Manna Kampus Online merupakan alternatif belanja dari Manna Kampus (Mirota Kampus) berupa one stop online store yang menyediakan berbagai macam produk dalam satu situs untuk memenuhi semua kebutuhan konsumen.</p>
       </div>
-      <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>
-        
-      
+      <p class="text__background">Mirota Kampus Group</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="gambar 1.PNG" />
+  </div>
+  <div class="flex__container flex--piplup animate--start" data-slide="2">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Our Client</p>
+        <h1 class="text--big">Kenes Bakery Group</h1>
+        <p class="text--normal">Kenes merupakan salah satu industri yang berjalan dibidang kuliner yang berdomisili di Yogyakarta</p>
+      </div>
+      <p class="text__background">Kenes Bakery Group</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="gambar 2.PNG" />
+  </div>
+  <div class="flex__container flex--blaziken animate--start" data-slide="3">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Our Client</p>
+        <h1 class="text--big">Berau Coal</h1>
+        <p class="text--normal">Berau Coal merupakan perusahaan tambang yang berada di Kalimantan</p>
+      </div>
+      <p class="text__background">Berau Coal</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="gambar 3.PNG" />
+  </div>
+  <div class="flex__container flex--dialga animate--start" data-slide="4">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Our Client</p>
+        <h1 class="text--big">Kedai Pams</h1>
+        <p class="text--normal">Kedai Pams merupakan perusahaan pengembang software yang berada di Depok, Jawa Barat</p>
+      </div>
+      <p class="text__background">Kedai Pams</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="gambar 4.PNG" />
+  </div>
+ 
+<div class="slider__navi">
+  <a href="#" class="slide-nav active" data-slide="1">Mirota Kampus Group</a>
+  <a href="#" class="slide-nav" data-slide="2">Kenes Bakery Group</a>
+  <a href="#" class="slide-nav" data-slide="3">Berau Coal</a>
+  <a href="#" class="slide-nav" data-slide="4">Kedai Pams</a>
+</div>
+    
 </body>
 </html>
